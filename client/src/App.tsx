@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Navbar } from "@/components/navbar";
 import { CartDrawer } from "@/components/cart-drawer";
 import { AuthModal } from "@/components/auth-modal";
+import Footer from "@/components/Footer"; // Import the Footer
 
 import Home from "@/pages/home";
 import Menu from "@/pages/menu";
@@ -26,6 +27,23 @@ function AppContent() {
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [cart, setCart] = useState<CartItem[]>([]);
+
+  // Check for existing user session on mount
+  useEffect(() => {
+    const checkAuthStatus = async () => {
+      try {
+        const response = await fetch("/api/auth/me");
+        if (response.ok) {
+          const user = await response.json();
+          setCurrentUser(user);
+        }
+      } catch (error) {
+        // User not authenticated, continue without user
+      }
+    };
+
+    checkAuthStatus();
+  }, []);
 
   // Fetch dishes
   const { data: dishes = [] } = useQuery<Dish[]>({
@@ -289,41 +307,49 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground flex flex-col">
       <Navbar
         cartItemCount={cartItemCount}
         onCartClick={() => setCartOpen(true)}
         onAuthClick={() => setAuthModalOpen(true)}
         isAuthenticated={!!currentUser}
+        currentUser={currentUser}
+        onLogout={handleLogout}
       />
 
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/menu">
-          <Menu dishes={dishes} onAddToCart={handleAddToCart} />
-        </Route>
-        <Route path="/rewards">
-          <Rewards
-            rewardPoints={currentUser?.rewardPoints || 0}
-            rewardHistory={rewardHistory}
-            coupons={coupons}
-          />
-        </Route>
-        <Route path="/profile">
-          <Profile
-            user={currentUser}
-            addresses={addresses}
-            orders={orders}
-            onAddAddress={handleAddAddress}
-            onEditAddress={handleEditAddress}
-            onDeleteAddress={handleDeleteAddress}
-            onLogout={handleLogout}
-          />
-        </Route>
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route component={NotFound} />
-      </Switch>
+      {/* Main content area that grows to fill available space */}
+      <main className="flex-grow">
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/menu">
+            <Menu dishes={dishes} onAddToCart={handleAddToCart} />
+          </Route>
+          <Route path="/rewards">
+            <Rewards
+              rewardPoints={currentUser?.rewardPoints || 0}
+              rewardHistory={rewardHistory}
+              coupons={coupons}
+            />
+          </Route>
+          <Route path="/profile">
+            <Profile
+              user={currentUser}
+              addresses={addresses}
+              orders={orders}
+              onAddAddress={handleAddAddress}
+              onEditAddress={handleEditAddress}
+              onDeleteAddress={handleDeleteAddress}
+              onLogout={handleLogout}
+            />
+          </Route>
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route component={NotFound} />
+        </Switch>
+      </main>
+
+      {/* Footer sticks to bottom */}
+      <Footer />
 
       <CartDrawer
         open={cartOpen}

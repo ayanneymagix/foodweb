@@ -122,6 +122,30 @@
   --destructive-border: hsl(from hsl(var(--destructive)) h s calc(l + var(--opaque-button-border-intensity)) / alpha);
 }
 
+/* Add these to your existing CSS */
+
+/* Smooth transitions for interactive elements */
+.footer-interactive {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects for footer items */
+.footer-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Gradient text animation */
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary-foreground), var(--ring));
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 .dark {
   --button-outline: rgba(255,255,255, .10);
   --badge-outline: rgba(255,255,255, .05);
