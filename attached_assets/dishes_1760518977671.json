@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 260,
+    "description": "Soft paneer cubes simmered in a rich creamy tomato-butter gravy with mild Indian spices.",
+    "image": "/images/paneer_butter_masala.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Dal Makhani",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 220,
+    "description": "Slow-cooked black lentils blended with cream and butter, a Punjabi favorite.",
+    "image": "/images/dal_makhani.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Shahi Paneer",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 250,
+    "description": "Cottage cheese cooked in royal cashew and cream gravy with subtle saffron flavors.",
+    "image": "/images/shahi_paneer.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Kadai Paneer",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 240,
+    "description": "Paneer tossed with bell peppers and onions in freshly ground Indian spices.",
+    "image": "/images/kadai_paneer.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Butter Chicken",
+    "category": "Main Course",
+    "type": "Non-Veg",
+    "price": 320,
+    "description": "Tandoori chicken cooked in buttery tomato sauce, creamy and flavorful.",
+    "image": "/images/butter_chicken.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chicken Tikka Masala",
+    "category": "Main Course",
+    "type": "Non-Veg",
+    "price": 310,
+    "description": "Tender chicken tikka pieces simmered in spicy, tangy tomato masala gravy.",
+    "image": "/images/chicken_tikka_masala.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Chole (Punjabi Style)",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 190,
+    "description": "Spicy chickpeas cooked with onions, tomatoes, and traditional Punjabi spices.",
+    "image": "/images/chole_punjabi.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Rajma Masala",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 200,
+    "description": "Red kidney beans slow-cooked in thick tomato gravy with aromatic spices.",
+    "image": "/images/rajma_masala.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Malai Kofta",
+    "category": "Main Course",
+    "type": "Veg",
+    "price": 260,
+    "description": "Paneer and potato dumplings stuffed with dry fruits in a creamy cashew gravy.",
+    "image": "/images/malai_kofta.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Mutton Rogan Josh",
+    "category": "Main Course",
+    "type": "Non-Veg",
+    "price": 380,
+    "description": "Tender mutton pieces slow-cooked in a rich, aromatic Kashmiri-style curry.",
+    "image": "/images/mutton_rogan_josh.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Butter Naan",
+    "category": "Breads",
+    "type": "Veg",
+    "price": 50,
+    "description": "Soft, fluffy naan brushed with melted butter.",
+    "image": "/images/butter_naan.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Garlic Naan",
+    "category": "Breads",
+    "type": "Veg",
+    "price": 70,
+    "description": "Crispy clay oven naan topped with minced garlic and coriander.",
+    "image": "/images/garlic_naan.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Tandoori Roti",
+    "category": "Breads",
+    "type": "Veg",
+    "price": 40,
+    "description": "Whole wheat roti roasted in traditional tandoor, light and crisp.",
+    "image": "/images/tandoori_roti.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Jeera Rice",
+    "category": "Rice",
+    "type": "Veg",
+    "price": 120,
+    "description": "Fragrant basmati rice tempered with cumin seeds and clarified butter.",
+    "image": "/images/jeera_rice.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Veg Biryani",
+    "category": "Rice",
+    "type": "Veg",
+    "price": 180,
+    "description": "Long-grain basmati rice layered with vegetables, saffron, and aromatic spices.",
+    "image": "/images/veg_biryani.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Boondi Raita",
+    "category": "Sides",
+    "type": "Veg",
+    "price": 70,
+    "description": "Refreshing yogurt with crispy boondi, spiced with roasted cumin and mint.",
+    "image": "/images/boondi_raita.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Gulab Jamun (2 pcs)",
+    "category": "Desserts",
+    "type": "Veg",
+    "price": 80,
+    "description": "Soft, deep-fried khoya balls soaked in warm sugar syrup.",
+    "image": "/images/gulab_jamun.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Sweet Lassi",
+    "category": "Beverages",
+    "type": "Veg",
+    "price": 90,
+    "description": "Chilled yogurt-based drink blended with sugar and a hint of rose essence.",
+    "image": "/images/sweet_lassi.jpg"
+  }
+]

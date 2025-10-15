@@ -1,0 +1,109 @@
+I want to create a cutting-edge, premium food-ordering website that surpasses Foodie Crush in visual richness, interactivity, user experience, and functionality, especially tuned for a North Indian restaurant specializing in Paneer Butter Masala, Dal Makhani, Butter Naan, etc. The style should draw inspiration from iman-gadzhi.com for animations and polish. The site must include all modern features: address management, rewards, coupons, smooth animations, etc.
+
+1. 🧱 Pages & Structure Enhancements
+
+Home Page
+  • Big hero section with high-quality hero image/video of dishes, slow-motion steam or spices, layered parallax background.
+  • Auto scroll reveals: tagline, “order now”, chef specials carousel with animated transitions.
+  • Prominent promotions/offers section (“Spicy Festival”, “Combo Deals”) with interactive cards.
+
+Menu / Explore Page
+  • Categorized sections (Starters, Main Course, Breads, Desserts, Beverages) with filters by veg/non-veg, price, popularity.
+  • Dish cards that animate in on scroll (fade + slide + maybe slight scale).
+  • Hover effects on dish images (zoom, shadow, overlay with “Add to Cart”).
+
+Cart & Checkout Flow
+  • Persistent cart drawer or sidebar that updates live.
+  • Ability to apply coupon codes / redeem reward points during checkout.
+  • Address page: users can save multiple addresses (home, work, etc.), upload address proof image (optional), edit/delete addresses.
+
+Rewards & Coupons Section
+  • Page/tab where users can see their reward points, history of rewards earned.
+  • List of active coupons/promos with descriptions, expirations, and “Apply” or “Copy” buttons.
+  • Mechanism to redeem reward points for discounts or freebies.
+
+User Profile / Dashboard
+  • Personal info, saved addresses, order history.
+  • Order tracking: show status (Received → Preparing → Out for Delivery → Delivered), timeline bar, estimated time.
+
+About / Contact Pages
+  • About Us: story of the restaurant, chef photos, philosophy, possibly video or animated background.
+  • Contact: contact form, map embed, social links, phone & email, business hours.
+
+Login / Signup
+  • Smooth overlay modal or dedicated page.
+  • Options: email/password + social login (Google etc.).
+
+Admin Panel (Optional but desirable)
+  • Manage dishes (add/edit/delete) with images, pricing, categories.
+  • View orders, update order statuses, manage coupons, view user data and reward history.
+
+2. 🎨 Design & Animation Upgrades
+
+Use high-impact animations:
+  • Page transition animations (fade, slide) between major sections/pages.
+  • Reveal-on-scroll (fade + slide + scale) for headings, dish cards, section backgrounds.
+  • Parallax effects: background layers, hero image, sections moving at different speeds.
+  • Micro-interactions: button hover, image hover, interactive icons.
+  • Floating / particle / smoke / spice elements in background (very subtle).
+  • Depth / 3D layering where possible (e.g. cards in front of backgrounds).
+
+Color & Typography
+  • Warm, rich palette reflecting North Indian food: gold / maroon / deep red / cream / green.
+  • Premium font choices: elegant serif for headings, clean sans serif for body.
+  • High-quality images of food.
+
+Responsiveness & Performance
+  • Ensure mobile version is smooth with animations optimized or simpler.
+  • Lazy loading images.
+  • Smooth scroll, minimal layout shift.
+
+3. ⚙️ Functional Improvements
+
+Search + Filters: dish search, filters by category, price, dietary (veg/non-veg), popularity.
+
+Real-time Cart updates and persistent cart (saved between sessions).
+
+Address management & upload: multiple addresses, optional address proof upload.
+
+Rewards & Coupon logic: track user points; allow redeeming; show available coupons; ensure coupon application is seamless.
+
+Order tracking with a visible timeline.
+
+Review & rating system for dishes.
+
+Option to schedule orders (e.g. for later).
+
+Option for table reservation.
+
+Newsletter subscription.
+
+Dark mode toggle (optional but adds modern touch).
+
+4. 📦 Tech Stack / Implementation Recommendations
+
+Frontend: React.js / Next.js
+
+Styling: Tailwind CSS (+ custom CSS where needed)
+
+Animations: Framer Motion / GSAP / ScrollTrigger / Locomotive Scroll
+
+Backend: Node.js + Express or Firebase / Supabase
+
+Database: MongoDB, Firestore or SQL depending on scale.
+
+Authentication: Email/password + external (Google).
+
+Payment: Integrate a payment gateway (Razorpay / Stripe) if needed.
+
+Hosting: Vercel, Netlify, or a platform with good performance.
+
+5. 🗣 Tone & User Experience
+
+The site should feel premium, immersive, mouth-watering. Users should get excited just by looking around.
+
+Animations should feel smooth, not gimmicky. Every animation should have purpose (enhancing usability or delight).
+
+Clear user journey: browsing → selecting → applying coupons / rewards → checkout should be frictionless.
+
+Trust-building: high-quality photos, clean design, visible contact info, delivery time estimates.
